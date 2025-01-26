@@ -4,6 +4,11 @@
 
 {% block body %}
     <h1>Article index</h1>
+    <ul>
+        <li>
+            <a href="{{ path('index_page', {'id': index.id}) }}"> Accueil</a>
+        </li>
+    </ul>
 
     <table class="table">
         <thead>
