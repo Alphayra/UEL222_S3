@@ -78,4 +78,12 @@ class ArticleController extends AbstractController
 
         return $this->redirectToRoute('article_index', [], Response::HTTP_SEE_OTHER);
     }
+
+#    #[Route('/{id}', name: 'main_page', methods: ['GET'])]
+#    public function show(Article $article): Response
+#    {
+#        return $this->render('article/show.html.twig', [
+#            'article' => $article,
+#        ]);
+#    }
 }
